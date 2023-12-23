@@ -49,6 +49,7 @@ function App() {
                       className="checkbox checkbox-accent"
                       ref={completedValue}
                       defaultChecked={completed}
+                      onClick={() => dispatch(toggleComplete(id))}
                     />
                     <p
                       style={

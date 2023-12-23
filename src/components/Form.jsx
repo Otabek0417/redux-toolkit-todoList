@@ -12,7 +12,7 @@ function Form() {
     const newTodos = {
       id: uuidv4(),
       title: title.current.value,
-      completed: true,
+      completed: false,
     };
     dispatch(addTodo(newTodos));
   };

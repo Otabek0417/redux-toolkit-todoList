@@ -24,7 +24,6 @@ export const todoSlice = createSlice({
     toggleComplete: (state, { payload }) => {
       const filterCompleted = state.todos.find((todo) => todo.id === payload);
       filterCompleted.completed = !filterCompleted.completed;
-
       localStorage.setItem("todos", JSON.stringify(state.todos));
     },
     statistic: (state) => {
