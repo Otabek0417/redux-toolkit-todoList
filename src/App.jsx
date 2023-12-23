@@ -44,10 +44,11 @@ function App() {
                   className="flex justify-between items-center p-4 gap-3 rounded-lg bg-[#262626]"
                 >
                   <div className="flex gap-3.5">
-                    <input 
+                    <input
                       type="checkbox"
                       className="checkbox checkbox-accent"
                       ref={completedValue}
+                      defaultChecked={completed}
                     />
                     <p
                       style={

@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 const todosLocalStorage = () => {
-  return JSON.parse(localStorage.getItem("todos") || []);
+  return JSON.parse(localStorage.getItem("todos")) || [];
 };
 const state = {
   todos: todosLocalStorage(),
